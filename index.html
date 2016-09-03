@@ -1,0 +1,38 @@
+<html ng-app="githubSearch">
+    <head>
+        <title>Best Git Projects</title>
+        <link rel="stylesheet" href="assets/main.css">
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    </head>
+    <body layout="column" id="git-pro">                    
+             <md-toolbar>Best Git Projects</md-toolbar>
+            <md-content class="content">
+                <h1>hello {{username.name}}</h1>
+                <p>Use <code>search</code> to search for Best Git open source projects.</p>
+            <form name="searchRepo" class="search-form" ng-submit="search(username)">
+                  <md-input-container layout="row"> 
+                  <i class="material-icons search-icon">search</i>
+                <input type="search" required ng-model="username" placeholder="search.." md-no-float class="search-input"/>
+                      <input type="submit"/>
+               </md-input-container>
+            </form>
+        </md-content>
+        
+                   
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+       
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+        <script src="index.js"></script>
+        <script src="github.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+<!--
+        <script type="text/javascript">    
+         angular.module('firstApplication', ['ngMaterial']);
+      </script>
+-->
+    </body>
+</html>

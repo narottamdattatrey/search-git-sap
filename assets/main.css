@@ -1,0 +1,30 @@
+#git-pro{
+    height: 100%;
+    
+}
+md-toolbar{
+/*    height: 18%;*/
+        width: 100%;
+        background-color: #424547;
+            text-align: center;
+    padding-top: 20px;
+}
+.content{
+        min-height: 82%;
+        width: 100%;
+        background-color: bisque;
+        padding: 20px;
+    }
+.search-input{
+    margin: 0;
+    border: 0;
+    border-radius: 12px;
+    outline: none;
+    padding-left: 5px;
+}
+.search-icon{
+    vertical-align: bottom;
+}
+.search-form{
+    text-align: center;
+}
